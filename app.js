@@ -37,4 +37,15 @@ function paginationSetup(currentPage) {
   });
 }
 
+function buttonSetupHandler() {
+  let pageCount = Math.ceil(names.length / rowCount);
+
+  for (let i = 0; i < pageCount; i++) {
+    let newButton = document.createElement("button");
+
+    newButtonHandler(newButton, i);
+  }
+}
+
+
 paginationSetup(currentPage);
