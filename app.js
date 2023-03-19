@@ -16,3 +16,25 @@ let names = [
 ];
 let menuContainer = document.querySelector(".menu-container");
 let btnContainer = document.querySelector(".btn-container");
+
+let rowCount = 3;
+let currentPage = 1;
+let startIndex;
+let endIndex;
+
+function paginationSetup(currentPage) {
+  menuContainer.innerHTML = "";
+
+  endIndex = rowCount * currentPage;
+  startIndex = endIndex - rowCount;
+
+  let slicedArray = names.slice(startIndex, endIndex);
+  slicedArray.forEach(function (name) {
+    menuContainer.insertAdjacentHTML(
+      "beforeend",
+      '<div class="test-item">' + name + "</div>"
+    );
+  });
+}
+
+paginationSetup(currentPage);
