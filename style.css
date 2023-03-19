@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #111;
+  height: auto;
+  max-width: 60rem;
+  margin: 5rem auto;
+  color: white;
+}
+
+.test-item {
+  border: 1px solid orange;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.btn-container {
+  display: flex;
+  margin: 10rem auto;
+  justify-content: center;
+}
+
+.btn-container button {
+  margin: 1rem;
+  padding: 12px;
+  transition: 0.4s ease;
+}
+
+.active {
+  scale: 1.03;
+  box-shadow: 0 0 4px orangered;
+  color: orange;
+}
