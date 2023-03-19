@@ -32,7 +32,7 @@ function paginationSetup(currentPage) {
   slicedArray.forEach(function (name) {
     menuContainer.insertAdjacentHTML(
       "beforeend",
-      '<div class="test-item">' + name + "</div>"
+      '<div class="table-item">' + name + "</div>"
     );
   });
 }
