@@ -47,5 +47,23 @@ function buttonSetupHandler() {
   }
 }
 
+function newButtonHandler(newButton, i) {
+  btnContainer.append(newButton);
+  newButton.textContent = i + 1;
 
+  if (currentPage === i + 1) {
+    newButton.classList.add("active");
+  }
+
+  newButton.addEventListener("click", function () {
+    currentPage = i + 1;
+    document.querySelector(".active").classList.remove("active");
+
+    newButton.classList.add("active");
+
+    paginationSetup(currentPage);
+  });
+}
+
+buttonSetupHandler();
 paginationSetup(currentPage);
