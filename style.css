@@ -6,16 +6,22 @@
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
+body {
+  background-color: #111;
+}
+
 .container {
   max-width: 80rem;
+  margin-top: 10px;
   margin-right: auto;
   margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 /* start  */
 
 .menu {
-  background-color: #000000;
   margin-top: 2rem;
 }
 
@@ -55,6 +61,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .btn-container button {
